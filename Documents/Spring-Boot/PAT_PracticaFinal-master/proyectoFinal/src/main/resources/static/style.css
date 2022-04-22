@@ -1,0 +1,121 @@
+h1,h2,h3,h4{
+    color:white;
+}
+
+label{
+    color:white;
+    padding-bottom:2px;
+}
+
+input[type="text"],input[type="password"],textarea{
+    background-color:#DCFFD7;
+    border-radius: 10px;
+
+}
+
+button{
+    background-color:white;
+    border-radius:10px;
+}
+
+.sectionTitle{
+    color:#202020;
+    text-align:center !important;
+    vertical-align:text-top !important;
+}
+.sectionButton{
+    float:center;
+    margin-top:1.5rem;
+    margin-right:0.5rem;
+}
+
+
+
+#titulo{
+    background-color:#202020;
+    padding-top:2%;
+    padding-left:3%;
+}
+#formulario{
+    padding-top:8%;
+    padding-bottom:12%;
+    background-color:#202020;
+}
+#signUpOption{
+    background-color:#202020;
+    padding-bottom:9%;
+}
+#loginOption{
+    padding-bottom:9%;
+
+}
+#formularioHome{
+    padding-top:1%;
+    padding-bottom:8%;
+    background-color:#202020;
+}
+
+#logo{
+    width: 5%;
+    height: 5% ;
+}
+
+#logo_image{
+    width: 6%;
+    height: 6%;
+
+}
+#logoSignUp{
+width: 6%;
+    height: 6%;
+
+}
+
+.titleSpace{
+    background-color:#DCFFD7;
+    border-style:double;
+
+}
+
+.searchSpace{
+    background-color:#DCFFD7;
+    border-style:double;
+    text-align:center;
+}
+.buttonSpace{
+    background-color:#DCFFD7;
+    border-style:double;
+    text-align:center;
+}
+.section{
+    padding-top:5%;
+}
+
+
+#playlistTitle{
+    padding-top:1.5rem;
+}
+
+
+#list{
+    padding-top:3%;
+}
+
+
+#listOfPlaylists{
+    background-color:#202020;
+    height:100vh;
+}
+
+.list-group-item{
+    background-color:#DCFFD7;
+    margin-top:1rem;
+    border-style: none none none inset;
+    border-color: #4dfc76;
+    border-width: 8px;
+}
+
+button.list-group-item{
+    border:none;
+    background-color:#DCFFD7;
+}

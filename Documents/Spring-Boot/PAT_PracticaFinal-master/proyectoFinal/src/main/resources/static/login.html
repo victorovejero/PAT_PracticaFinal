@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Document</title>
+</head>
+<body>
+
+<nav class=" navbar navbar-expand-lg navbar-light" style="background-color:#4dfc76;">
+    <a class="mx-3 navbar-brand" href="home.html">Inicio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+</nav>
+<center>
+<div class="pt-4" id="titulo">
+    <h1 style="margin-bottom:0px !important;">Inicia Sesión!</h1>
+
+</div>
+<div id="formulario">
+    <form action="">
+        <label class="pb-1"for="usuarioLogin">Nombre de Usuario</label>
+        <br>
+
+        <input type="text" placeholder="e.g. Victor123" id="usuarioLogin">
+        <br><br>
+        <label class="pb-1" for="passwordLogin">Contraseña</label>
+        <br>
+        <input type="password" id="passwordLogin">
+    </form>
+    <button class="mt-5" onclick="LogIn()">Inicia Sesión</button>
+
+</div>
+    <div id="signUpOption">
+        <h4>Si no tienes una cuenta con nosotros, <a href="signUp.html">Regístrate</a></h4>
+    </div>
+
+</center>
+<script src="userMethods.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>

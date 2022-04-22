@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body style="background-color:#202020;">
+
+<nav class=" navbar navbar-expand-lg navbar-light" style="background-color:#4dfc76;">
+    <div class="container-fluid">
+
+        <img class="d-inline-block align-middle rounded-pill px-3" src="itops_logo.png" id="logo_image">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a style="font-size:20px;" class="nav-link" href="logIn.html">Log In</a>
+                </li>
+                <li class="nav-item">
+                    <a style="font-size:20px;" class="nav-link" href="signUp.html">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a style="font-size:20px;" class="nav-link" href="ListOfPlaylists.html">Mis Playlists</a>
+
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+    <div class=" py-3 mx-1 container-fluid"  id="titulo">
+
+        <!-- CANCION -->
+        <div class="row pt-3 px-3" id="title">
+            <div class="col-2">
+                <h1 style="color:#4dfc76;">HOME!</h1>
+            </div>
+        </div>
+        <div class="row section">
+            <div class="col-sm-2">
+
+            </div>
+            <div class="col-2 pt-3 pb-2 px-2 titleSpace">
+                <span class="border-success">
+                    <h2 class="sectionTitle">Playlist</h2>
+                </span>
+            </div>
+            <div class="pl-5 col-3 py-4 searchSpace" >
+                <span style="border-style=double;">
+                    <form action="">
+                    <input style="background-color:white;" type="text" id="playlistId">
+                    </form>
+                </span>
+            </div>
+            <div class="col-3 buttonSpace">
+                <button class="sectionButton" onclick="PlaylistPorId()">Buscar</button>
+                <button class="sectionButton" onclick="BorraPlaylistPorId()">Borrar</button>
+                <button class="sectionButton" onclick="location.href = 'createPlaylist.html' ">Crear</button>
+            </div>
+        </div>
+
+        <!-- CANCION -->
+
+        <div class="row section">
+            <div class="col-sm-2">
+
+            </div>
+            <div class="col-2 pt-3 pb-2 px-2 titleSpace">
+                <span class="border-success">
+                    <h2 class="sectionTitle">Cancion</h2>
+                </span>
+            </div>
+            <div class="pl-5 col-3 py-4 searchSpace" >
+                <span style="border-style=double;">
+                    <form action="">
+                    <input style="background-color:white;" type="text" id="cancionId">
+                    </form>
+                </span>
+            </div>
+            <div class="col-3 buttonSpace">
+                <button class="sectionButton" onclick="CancionPorId()">Buscar</button>
+                <button class="sectionButton" onclick="BorraCancionPorId()">Borrar</button>
+                <button class="sectionButton" onclick="location.href = 'createCancion.html' ">Crear</button>
+            </div>
+        </div>
+
+        <div class="row section">
+            <div class="col-sm-2">
+
+            </div>
+            <div class="col-2 pt-3 pb-2 px-2 titleSpace">
+                <span class="border-success">
+                    <h2 class="sectionTitle">Usuario</h2>
+                </span>
+            </div>
+            <div class="pl-5 col-3 py-4 searchSpace" >
+                <span style="border-style=double;">
+                    <form action="">
+                    <input style="background-color:white;" type="text" id="usuarioId" >
+                    </form>
+                </span>
+            </div>
+            <div class="col-3 buttonSpace">
+                <button class="sectionButton" onclick="UsuarioPorId()">Buscar</button>
+                <button class="sectionButton" onclick="BorraUsuarioPorId()">Borrar</button>
+                <button class="sectionButton" onclick="location.href='signUp.html'">Crear</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script src="script.js"></script>
+<!-- JavaScript Bundle with Popper -->
+
+</body>
+</html>
