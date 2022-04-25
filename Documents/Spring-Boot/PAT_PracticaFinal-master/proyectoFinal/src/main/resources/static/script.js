@@ -86,7 +86,7 @@ function BorraUsuarioPorId(){
 function CreatePlaylistMethod(){
     try {
         let inputValue1 = document.getElementById("playlist").value;
-        var accessToken = localStorage.getItem("accessToken");
+        let accessToken = localStorage.getItem("accessToken");
         const address = 'api/v1/playlist/create/'+inputValue1+"?user="+accessToken;
         fetch(address, {
             method: 'GET',

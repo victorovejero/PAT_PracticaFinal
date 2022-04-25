@@ -68,6 +68,7 @@ async function LogIn(){
                     console.log(data.accessToken);
                     localStorage.setItem("user", usuario);
                     localStorage.setItem("accessToken", data.accessToken);
+                    console.log(localStorage.getItem("accessToken"));
                     document.location.href="ListOfPlaylists.html";
                 } else {
                     alert(data.result);

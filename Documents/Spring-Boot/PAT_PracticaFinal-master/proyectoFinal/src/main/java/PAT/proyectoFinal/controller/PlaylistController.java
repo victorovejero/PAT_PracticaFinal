@@ -31,23 +31,21 @@ public class PlaylistController {
     //return ResponseEntity.ok().body(playlistService.getPlaylistsService());
   }
 
+//
+//  @GetMapping("/playlists/{user}")
+//  public ResponseEntity<Iterable<playlistModel>> getPlaylistsByUser(
+//          @PathVariable String user
+//  ){
+//
+//    HttpHeaders responseHeaders = new HttpHeaders();
+//    responseHeaders.set("Result", "OK");
+//    System.out.println(responseHeaders);
+//    return new ResponseEntity<Iterable<playlistModel>>(playlistService.getPlaylistByUserService(user),responseHeaders, HttpStatus.OK);
+//
+//    //return ResponseEntity.ok().body(playlistService.getPlaylistsService());
+//  }
 
-  @GetMapping("/playlists/{user}")
-  public ResponseEntity<Iterable<playlistModel>> getPlaylistsByUser(
-          @PathVariable String user
-  ){
 
-    HttpHeaders responseHeaders = new HttpHeaders();
-    responseHeaders.set("Result", "OK");
-    System.out.println(responseHeaders);
-    return new ResponseEntity<Iterable<playlistModel>>(playlistService.getPlaylistByUserService(user),responseHeaders, HttpStatus.OK);
-
-    //return ResponseEntity.ok().body(playlistService.getPlaylistsService());
-  }
-
-  //LOS TRES DE ARRIBA FUNCIONAN BIEN.
-
-  //NO ESTA TERMINADO
   @RequestMapping(value="/playlist/{id}", method = RequestMethod.GET)
   public ResponseEntity<Iterable<playlistModel>> getPlaylistByName(
           @PathVariable String id,
